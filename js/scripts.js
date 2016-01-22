@@ -2,7 +2,7 @@
 //takes number and determines if it should changed
 var numberInput = function(number) {
   if((number % 3 === 0) && (number % 5 === 0)) {
-    return "pingpong";
+    return "PINGPONG";
   } else {
     if(number % 3 === 0) {
       return "ping";
