@@ -13,7 +13,7 @@ body {
   color: #caecd0;
   padding: 5px;
   margin: 10%;
-  position: relative;
+
 }
 .instructions{
   float: left;
@@ -35,4 +35,7 @@ body {
 }
 .output {
   word-wrap: break-word;
+}
+img {
+  width: 80%;
 }
