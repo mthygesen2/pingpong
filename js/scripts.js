@@ -27,11 +27,19 @@ var numberLoop = function(loop) {
   return resultString;
 };
 
+//put it into a list
+
 $(document).ready(function(){
   $("#ppForm").submit(function(event){
     var inputValue = $("input#userInput").val();
     var outputShow = numberLoop(inputValue);
+
       $(".output").text(outputShow)
     event.preventDefault();
   });
 });
+
+
+  // resultArray.forEach(function(result){
+  //   var listItem = $("#userInput").val();
+  // }
