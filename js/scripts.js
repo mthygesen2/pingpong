@@ -22,17 +22,16 @@ var numberLoop = function(loop) {
   var resultArray = [];
   for(var index = 1; index <= loop; index += 1) {
     resultArray.push(numberInput(index));
-}
-return resultArray;
+  }
+  return resultArray;
 };
-// var numberArray = function()
-//
 
-// $(document).ready(function(){
-//   $("#ppForm").submit(function(event) {
-//     var
-//     $(".output").text(output);
-//   });
-// });
-  // return result.push(i);
-    //
+$(document).ready(function(){
+  $("#ppForm").submit(function(event){
+    var inputValue = $("input#userInput").val();
+    var outputShow = numberLoop(inputValue);
+      $(".output").text(outputShow);
+      
+    event.preventDefault();
+  });
+});
