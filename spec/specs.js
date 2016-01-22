@@ -5,4 +5,7 @@ describe("numberInput", function() {
   it("is going to replace number with ping if the modulo of 3 equals 0", function(){
     expect(numberInput(9)).to.equal("ping");
   });
+  it("is going to replace number with pong if the modulo of 5 equals 0", function(){
+    expect(numberInput(10)).to.equal("pong");
+  });
 });
