@@ -18,6 +18,6 @@ describe("numberInput", function() {
 
 describe("numberLoop", function() {
   it("is going to list numbers from 1 to the number input and replacing them with ping, pong or pingpong when needed", function(){
-    expect(numberLoop(6)).to.eql([1,2,"ping",4,"pong","ping"]);
+    expect(numberLoop(6)).to.equal("1,2,ping,4,pong,ping");
   });
 });

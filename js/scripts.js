@@ -23,15 +23,15 @@ var numberLoop = function(loop) {
   for(var index = 1; index <= loop; index += 1) {
     resultArray.push(numberInput(index));
   }
-  return resultArray;
+  var resultString = resultArray.toString();
+  return resultString;
 };
 
 $(document).ready(function(){
   $("#ppForm").submit(function(event){
     var inputValue = $("input#userInput").val();
     var outputShow = numberLoop(inputValue);
-      $(".output").text(outputShow);
-      
+      $(".output").text(outputShow)
     event.preventDefault();
   });
 });
