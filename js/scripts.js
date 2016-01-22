@@ -1,5 +1,7 @@
 var numberInput = function(number) {
-  return "ping";
+  if(number % 3 === 0) {
+      return "ping";
+  }
 };
 
 
