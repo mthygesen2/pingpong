@@ -21,8 +21,9 @@ var numberInput = function(number) {
 var numberLoop = function(loop) {
   var resultArray = [];
   for(var index = 1; index <= loop; index += 1) {
-    resultArray.push(numberInput(i));
+    resultArray.push(numberInput(index));
 }
+return resultArray;
 };
 // var numberArray = function()
 //
