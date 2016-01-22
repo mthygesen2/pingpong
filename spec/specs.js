@@ -11,4 +11,7 @@ describe("numberInput", function() {
   it("is going to replace number with pinpong if the modulo of 15 equals 0", function(){
     expect(numberInput(30)).to.equal("pingpong");
   });
+  it("is going to tell the user to input numbers only", function (){
+    expect(numberInput("Hello")).to.equal("Please input numbers");
+  });
 });

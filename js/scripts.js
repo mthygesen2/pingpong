@@ -7,6 +7,8 @@ if((number % 3 === 0) && (number % 5 === 0)) {
     }else {
       if(number % 5 === 0) {
       return "pong";
+      }else {
+        return "Please input numbers";
       }
     }
   }
