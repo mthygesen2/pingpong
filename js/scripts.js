@@ -8,12 +8,18 @@ if((number % 3 === 0) && (number % 5 === 0)) {
       if(number % 5 === 0) {
       return "pong";
       }else {
-        return "Please input numbers";
+        return number;
       }
     }
   }
+  for(var i =1; i <= number; i += 1) {
+    push(number(i));
+  }
 };
 
-$(document).ready(function(){
-  
-});
+// $(document).ready(function(){
+//   $("#ppForm").submit(function(event) {
+//     var
+//     $(".output").text(output);
+//   });
+// });
