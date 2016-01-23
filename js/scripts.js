@@ -23,23 +23,26 @@ var numberLoop = function(loop) {
   for(var index = 1; index <= loop; index += 1) {
     resultArray.push(numberInput(index));
   }
-  var resultString = resultArray.toString();
-  return resultString;
+  // var resultString = resultArray.toString();
+  return resultArray;
 };
 
 //put it into a list
 
 $(document).ready(function(){
   $("#ppForm").submit(function(event){
-    var inputValue = $("input#userInput").val();
+    var inputValue = $("#userInput").val();
     var outputShow = numberLoop(inputValue);
-
-      $(".output").text(outputShow)
+    outputShow.forEach(function(result){
+      $(".output").append("<li>" +result+ "</li>")
     event.preventDefault();
+    });
   });
 });
 
 
-  // resultArray.forEach(function(result){
-  //   var listItem = $("#userInput").val();
-  // }
+
+// var inputValue = $("input#userInput").val();
+// var outputShow = numberLoop(inputValue);
+//
+//   $(".output").text(outputShow)
