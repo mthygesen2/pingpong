@@ -35,12 +35,13 @@ $(document).ready(function(){
     var outputShow = numberLoop(inputValue);
     outputShow.forEach(function(result){
       $(".output").append("<li>" +result+ "</li>")
+
     event.preventDefault();
     });
   });
 });
 
-
+// $(".output").remove("<li>" +result+ "</li>")
 
 // var inputValue = $("input#userInput").val();
 // var outputShow = numberLoop(inputValue);
